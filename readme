@@ -1,0 +1,4 @@
+My PC would not enter sleep mode correctly, so it would be on all the time. 
+I wrote this quick little Java application to automatically shut my PC down after 30 minutes of inactivity.
+Since Java is sandboxed, I didn't have access to the Windows API (unless I used JSNI).
+What I ended up doing was just polling the mouse x and y coordinates, and shutting down if there was no change for 30 minutes.
